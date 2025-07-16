@@ -14,7 +14,5 @@ sudo cloudflared service install eyJhIjoiYjBiNTA3NzQ0ZDQ1Y2Y0OGM1NTA2ZjEwOWQxODk
 
 
 
-cloudflared tunnel run --token eyJhIjoiYjBiNTA3NzQ0ZDQ1Y2Y0OGM1NTA2ZjEwOWQxODkyMDciLCJ0IjoiNDUyZTE3MGItMzMxYy00YmYyLTg5N2MtYmM5ZTQwZTZlZTU5IiwicyI6Ik1USXpOR0V6WkRZdE0ySXlOUzAwTmprMExUaGhOMkl0TnpNeVpUazRNbVJqT1RjeiJ9
-
 
 
