@@ -1,0 +1,20 @@
+# Add cloudflare gpg key
+sudo mkdir -p --mode=0755 /usr/share/keyrings
+curl -fsSL https://pkg.cloudflare.com/cloudflare-main.gpg | sudo tee /usr/share/keyrings/cloudflare-main.gpg >/dev/null
+
+# Add this repo to your apt repositories
+echo 'deb [signed-by=/usr/share/keyrings/cloudflare-main.gpg] https://pkg.cloudflare.com/cloudflared any main' | sudo tee /etc/apt/sources.list.d/cloudflared.list
+
+# install cloudflared
+sudo apt-get update && sudo apt-get install cloudflared
+
+
+
+sudo cloudflared service install eyJhIjoiYjBiNTA3NzQ0ZDQ1Y2Y0OGM1NTA2ZjEwOWQxODkyMDciLCJ0IjoiNDUyZTE3MGItMzMxYy00YmYyLTg5N2MtYmM5ZTQwZTZlZTU5IiwicyI6Ik1USXpOR0V6WkRZdE0ySXlOUzAwTmprMExUaGhOMkl0TnpNeVpUazRNbVJqT1RjeiJ9
+
+
+
+cloudflared tunnel run --token eyJhIjoiYjBiNTA3NzQ0ZDQ1Y2Y0OGM1NTA2ZjEwOWQxODkyMDciLCJ0IjoiNDUyZTE3MGItMzMxYy00YmYyLTg5N2MtYmM5ZTQwZTZlZTU5IiwicyI6Ik1USXpOR0V6WkRZdE0ySXlOUzAwTmprMExUaGhOMkl0TnpNeVpUazRNbVJqT1RjeiJ9
+
+
+
