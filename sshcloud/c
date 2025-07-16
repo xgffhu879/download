@@ -1,0 +1,1 @@
+screen -m -d -S cloudflare cloudflared tunnel run --token eyJhIjoiYjBiNTA3NzQ0ZDQ1Y2Y0OGM1NTA2ZjEwOWQxODkyMDciLCJ0IjoiMTcxMzU0ZTktY2VmMy00MzU3LThmMjktZGFhNTI1ZjJmY2M4IiwicyI6Ik16Y3lZamRpWldRdE16VXdZUzAwWm1JeUxUa3dObVl0TnpFek1qWmlPRFl3T1dGbCJ9
