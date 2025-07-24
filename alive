@@ -1,0 +1,4 @@
+import time
+while True:
+    print("Still alive...")
+    time.sleep(600)  # prints every 10 minutes
