@@ -16,13 +16,7 @@ wget https://github.com/xgffhu879/download/raw/refs/heads/main/stunnel.conf && m
 echo "connect = $(cat testfile)" >> /etc/stunnel/stunnel.conf
 cat /etc/stunnel/stunnel.conf
 service stunnel4 restart
-cat > /root/alive <<EOF
-import time
-while True:
-    print("Still alive...")
-    time.sleep(600)  # prints every 10 minutes
-
-EOF
+wget https://github.com/xgffhu879/download/raw/refs/heads/main/alive 
 
 
 echo done
