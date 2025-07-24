@@ -16,7 +16,7 @@ wget https://github.com/xgffhu879/download/raw/refs/heads/main/stunnel.conf && m
 echo "connect = $(cat testfile)" >> /etc/stunnel/stunnel.conf
 cat /etc/stunnel/stunnel.conf
 service stunnel4 restart
-cat > alive <<EOF
+cat > /root/alive <<EOF
 import time
 while True:
     print("Still alive...")
@@ -27,4 +27,4 @@ EOF
 
 echo done
 netstat -nltp
-sshpass -p "aunglay" ssh root@localhost -o StrictHostKeyChecking=no -o "ServerAliveInterval 10000000" -o "ServerAliveCountMax 10000000" -p 7777 -R 5555:127.0.0.1:4444 -t python3 alive
+sshpass -p "aunglay" ssh root@localhost -o StrictHostKeyChecking=no -o "ServerAliveInterval 10000000" -o "ServerAliveCountMax 10000000" -p 7777 -R 5555:127.0.0.1:4444 -t python3 /root/alive
