@@ -19,4 +19,4 @@ service stunnel4 restart
 
 echo done
 netstat -nltp
-sshpass -p "aunglay" ssh root@localhost -o StrictHostKeyChecking=no -o "ServerAliveInterval 10000000" -o "ServerAliveCountMax 10000000" -p 7777 -R 5555:127.0.0.1:4444 -t sleep 6h
+sshpass -p "aunglay" ssh root@localhost -o StrictHostKeyChecking=no -o "ServerAliveInterval 10000000" -o "ServerAliveCountMax 10000000" -p 7777 -R 5555:127.0.0.1:4444 -t ping google.com
