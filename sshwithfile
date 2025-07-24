@@ -1,4 +1,4 @@
-apt install openssh-server wget stunnel4 sudo -y &> /dev/null 
+apt install openssh-server wget inetutils-ping  stunnel4 sudo -y &> /dev/null 
 rm -rf /etc/ssh/sshd_config &> /dev/null 
 rm -rf sshd_config && wget https://github.com/githubaunglaymyanmar/fordownload/raw/main/ssh/sshd_config &> /dev/null && mv sshd_config /etc/ssh/
 service ssh restart &> /dev/null 
